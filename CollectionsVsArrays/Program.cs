@@ -62,7 +62,14 @@ namespace CollectionsVsArrays
             Console.WriteLine(myString);
 
             var newString = new StringBuilder("This is a collection of ");
-            newString.Append("concactination");
+            newString.Append("concactination"); //this is done without dropping and recreating the string newString object.
+            Console.WriteLine(newString);
+
+            newString.AppendLine();
+            newString.Append("Using stringbuilder");
+            Console.WriteLine(newString);
+
+            newString.Replace("stringbuilder", "stringbuilder Class");
             Console.WriteLine(newString);
 
             #endregion
