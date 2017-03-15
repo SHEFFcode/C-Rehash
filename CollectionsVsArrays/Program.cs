@@ -61,6 +61,10 @@ namespace CollectionsVsArrays
             myString = myString + "concactination."; //original mystring is destroyed and a new one was created with concated info.
             Console.WriteLine(myString);
 
+            var newString = new StringBuilder("This is a collection of ");
+            newString.Append("concactination");
+            Console.WriteLine(newString);
+
             #endregion
 
 
