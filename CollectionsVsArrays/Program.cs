@@ -24,7 +24,11 @@ namespace CollectionsVsArrays
             Console.WriteLine(dogs[0]);
 
             //Create an array
-
+            string[] dogsArray = new string[] {"Bulldog", "Collie", "Retriever"};
+            foreach (var dog in dogsArray)
+            {
+                Console.WriteLine(dog);
+            }
         }
     }
 }
