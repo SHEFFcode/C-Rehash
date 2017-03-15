@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,27 +58,73 @@ namespace CollectionsVsArrays
 
             #region String vs StringBuilder
 
-            string myString = "This is an example of ";
-            myString = myString + "concactination."; //original mystring is destroyed and a new one was created with concated info.
-            Console.WriteLine(myString);
+//            string myString = "This is an example of ";
+//            myString = myString + "concactination."; //original mystring is destroyed and a new one was created with concated info.
+//            Console.WriteLine(myString);
+//
+//            var newString = new StringBuilder("This is a collection of ");
+//            newString.Append("concactination"); //this is done without dropping and recreating the string newString object.
+//            Console.WriteLine(newString);
+//
+//            newString.AppendLine();
+//            newString.Append("Using stringbuilder");
+//            Console.WriteLine(newString);
+//
+//            newString.Replace("stringbuilder", "stringbuilder Class");
+//            Console.WriteLine(newString);
 
-            var newString = new StringBuilder("This is a collection of ");
-            newString.Append("concactination"); //this is done without dropping and recreating the string newString object.
-            Console.WriteLine(newString);
+            #endregion
 
-            newString.AppendLine();
-            newString.Append("Using stringbuilder");
-            Console.WriteLine(newString);
+            #region StringREader and StringWriter
 
-            newString.Replace("stringbuilder", "stringbuilder Class");
-            Console.WriteLine(newString);
+            StringReadWrite srw = new StringReadWrite();
 
             #endregion
 
 
 
-
-
         }
     }
+
+    #region Write Data Using StringWriter
+
+
+    public class StringReadWrite
+    {
+        StringBuilder sb = new StringBuilder();
+
+        public StringReadWrite()
+        {
+            WriteData();
+            ReadData();
+        }
+
+        public void WriteData()
+        {
+            StringWriter sw = new StringWriter(sb);
+
+            Console.WriteLine("Please enter your first and last name...");
+
+            string name = Console.ReadLine();
+            sw.WriteLine($"Name: {name}");
+            sw.Flush();
+            sw.Close();
+        }
+
+        public void ReadData()
+        {
+            StringReader sr = new StringReader(sb.ToString());
+            while (sr.Peek() > -1)
+            {
+                Console.WriteLine(sr.ReadLine());
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Thank you for using our program.");
+
+            sr.Close();
+        }
+    }
+
+    #endregion
 }
