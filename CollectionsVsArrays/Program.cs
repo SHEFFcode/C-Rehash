@@ -91,12 +91,24 @@ namespace CollectionsVsArrays
             //            #endregion
 
 
-            #region Constructors
+//            #region Constructors
+//
+//            var defaultConstructor = new DefConstructor();
+//            defaultConstructor.DoTHis();
+//
+//            var addConstructor = new AddConstructor();
+//
+//            #endregion
 
-            var defaultConstructor = new DefConstructor();
-            defaultConstructor.DoTHis();
 
-            var addConstructor = new AddConstructor();
+            #region Static Methods
+
+            var pi = Math.Round(3.14, 1);
+            Console.WriteLine(pi);
+
+            Car.Accelerate(); //Notice the class is not static, but it has a static method, and it can be called without instantiating the object.
+            var car = new Car();
+            car.SlowDown(); //Notice that Accelerate is not available to the instance of car.
 
             #endregion
 
@@ -185,27 +197,45 @@ namespace CollectionsVsArrays
 
 
 
-    #region Constructors
+    //    #region Constructors
+    //
+    //    public class DefConstructor
+    //    {
+    //        public void DoTHis()
+    //        {
+    //            Console.WriteLine("This has run.");
+    //        }
+    //    }
+    //
+    //    public class AddConstructor
+    //    {
+    //        public AddConstructor()
+    //        {
+    //            Console.WriteLine("The add constructor has been called.");
+    //            DoThat();
+    //        }
+    //
+    //        public void DoThat()
+    //        {
+    //            Console.WriteLine("Do that has executed.");
+    //        }
+    //    }
+    //
+    //    #endregion
 
-    public class DefConstructor
+
+    #region Static Methods
+
+    public class Car
     {
-        public void DoTHis()
+        public static void Accelerate()
         {
-            Console.WriteLine("This has run.");
-        }
-    }
-
-    public class AddConstructor
-    {
-        public AddConstructor()
-        {
-            Console.WriteLine("The add constructor has been called.");
-            DoThat();
+            Console.WriteLine("Car is accelerating.");
         }
 
-        public void DoThat()
+        public void SlowDown()
         {
-            Console.WriteLine("Do that has executed.");
+            Console.WriteLine("Car is slowing down.");
         }
     }
 
