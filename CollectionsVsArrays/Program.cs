@@ -100,7 +100,6 @@ namespace CollectionsVsArrays
     {
         private int _age;
 
-
         public int Age
         {
             get { return _age; }
@@ -116,6 +115,16 @@ namespace CollectionsVsArrays
                 }
             }
         }
+
+
+        private string _name; //Created using proofull tab tab
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
     }
 
 //    #region Write Data Using StringWriter
