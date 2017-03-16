@@ -83,10 +83,20 @@ namespace CollectionsVsArrays
             //            #endregion
 
 
-            #region Using properties and fields
+            //            #region Using properties and fields
+            //
+            //            var person = new Person();
+            //            person.Age = 91;
+            //
+            //            #endregion
 
-            var person = new Person();
-            person.Age = 91;
+
+            #region Constructors
+
+            var defaultConstructor = new DefConstructor();
+            defaultConstructor.DoTHis();
+
+            var addConstructor = new AddConstructor();
 
             #endregion
 
@@ -96,76 +106,111 @@ namespace CollectionsVsArrays
         }
     }
 
-    public class Person
+    //    #region Using Properties and Fields
+    //
+    //    public class Person
+    //    {
+    //        private int _age;
+    //
+    //        public int Age
+    //        {
+    //            get { return _age; }
+    //            set
+    //            {
+    //                if (value > 0 && value < 65)
+    //                {
+    //                    _age = value;
+    //                }
+    //                else
+    //                {
+    //                    throw new Exception("Age cannot be over 65.");
+    //                }
+    //            }
+    //        }
+    //
+    //
+    //        private string _name; //Created using proofull tab tab
+    //
+    //        public string Name
+    //        {
+    //            get { return _name; }
+    //            set { _name = value; }
+    //        }
+    //
+    //    }
+    //
+    //    #endregion
+
+    //    #region Write Data Using StringWriter
+    //
+    //
+    //    public class StringReadWrite
+    //    {
+    //        StringBuilder sb = new StringBuilder();
+    //
+    //        public StringReadWrite()
+    //        {
+    //            WriteData();
+    //            ReadData();
+    //        }
+    //
+    //        public void WriteData()
+    //        {
+    //            StringWriter sw = new StringWriter(sb);
+    //
+    //            Console.WriteLine("Please enter your first and last name...");
+    //
+    //            string name = Console.ReadLine();
+    //            sw.WriteLine($"Name: {name}");
+    //            sw.Flush();
+    //            sw.Close();
+    //        }
+    //
+    //        public void ReadData()
+    //        {
+    //            StringReader sr = new StringReader(sb.ToString());
+    //            while (sr.Peek() > -1)
+    //            {
+    //                Console.WriteLine(sr.ReadLine());
+    //            }
+    //
+    //            Console.WriteLine();
+    //            Console.WriteLine("Thank you for using our program.");
+    //
+    //            sr.Close();
+    //        }
+    //    }
+    //
+    //    #endregion
+
+
+
+    #region Constructors
+
+    public class DefConstructor
     {
-        private int _age;
-
-        public int Age
+        public void DoTHis()
         {
-            get { return _age; }
-            set
-            {
-                if (value > 0 && value < 65)
-                {
-                    _age = value;
-                }
-                else
-                {
-                    throw new Exception("Age cannot be over 65.");
-                }
-            }
+            Console.WriteLine("This has run.");
         }
-
-
-        private string _name; //Created using proofull tab tab
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
     }
 
-//    #region Write Data Using StringWriter
-//
-//
-//    public class StringReadWrite
-//    {
-//        StringBuilder sb = new StringBuilder();
-//
-//        public StringReadWrite()
-//        {
-//            WriteData();
-//            ReadData();
-//        }
-//
-//        public void WriteData()
-//        {
-//            StringWriter sw = new StringWriter(sb);
-//
-//            Console.WriteLine("Please enter your first and last name...");
-//
-//            string name = Console.ReadLine();
-//            sw.WriteLine($"Name: {name}");
-//            sw.Flush();
-//            sw.Close();
-//        }
-//
-//        public void ReadData()
-//        {
-//            StringReader sr = new StringReader(sb.ToString());
-//            while (sr.Peek() > -1)
-//            {
-//                Console.WriteLine(sr.ReadLine());
-//            }
-//
-//            Console.WriteLine();
-//            Console.WriteLine("Thank you for using our program.");
-//
-//            sr.Close();
-//        }
-//    }
-//
-//    #endregion
+    public class AddConstructor
+    {
+        public AddConstructor()
+        {
+            Console.WriteLine("The add constructor has been called.");
+            DoThat();
+        }
+
+        public void DoThat()
+        {
+            Console.WriteLine("Do that has executed.");
+        }
+    }
+
+    #endregion
+
+
+
 }
