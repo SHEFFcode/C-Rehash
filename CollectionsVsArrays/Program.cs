@@ -91,26 +91,38 @@ namespace CollectionsVsArrays
             //            #endregion
 
 
-//            #region Constructors
+            //            #region Constructors
+            //
+            //            var defaultConstructor = new DefConstructor();
+            //            defaultConstructor.DoTHis();
+            //
+            //            var addConstructor = new AddConstructor();
+            //
+            //            #endregion
+
+            //
+            //            #region Static Methods
+            //
+            //            var pi = Math.Round(3.14, 1);
+            //            Console.WriteLine(pi);
+            //
+            //            Car.Accelerate(); //Notice the class is not static, but it has a static method, and it can be called without instantiating the object.
+            //            var car = new Car();
+            //            car.SlowDown(); //Notice that Accelerate is not available to the instance of car.
+            //
+            //            #endregion
 //
-//            var defaultConstructor = new DefConstructor();
-//            defaultConstructor.DoTHis();
+//            #region Structs
 //
-//            var addConstructor = new AddConstructor();
+//            Mark m = new Mark(6, 7);
+//            m.DoThis();
+//
+//            Mark m2; // create a struct without using the new keyword
+//            m2._x = 6; // if we dont use new keywork we have to provide the instance variables for the struct.
+//            m2._y = 7;
+//            m2.DoThis();
 //
 //            #endregion
-
-
-            #region Static Methods
-
-            var pi = Math.Round(3.14, 1);
-            Console.WriteLine(pi);
-
-            Car.Accelerate(); //Notice the class is not static, but it has a static method, and it can be called without instantiating the object.
-            var car = new Car();
-            car.SlowDown(); //Notice that Accelerate is not available to the instance of car.
-
-            #endregion
 
 
 
@@ -224,22 +236,43 @@ namespace CollectionsVsArrays
     //    #endregion
 
 
-    #region Static Methods
+    //    #region Static Methods
+    //
+    //    public class Car
+    //    {
+    //        public static void Accelerate()
+    //        {
+    //            Console.WriteLine("Car is accelerating.");
+    //        }
+    //
+    //        public void SlowDown()
+    //        {
+    //            Console.WriteLine("Car is slowing down.");
+    //        }
+    //    }
+    //
+    //    #endregion
 
-    public class Car
-    {
-        public static void Accelerate()
-        {
-            Console.WriteLine("Car is accelerating.");
-        }
-
-        public void SlowDown()
-        {
-            Console.WriteLine("Car is slowing down.");
-        }
-    }
-
-    #endregion
+//    #region Structs
+//
+//    public struct Mark
+//    {
+//        public int _x;
+//        public int _y;
+//
+//        public Mark(int x, int y) // have to have params for a constructor for a struct.
+//        {
+//            _x = x;
+//            _y = y;
+//        }
+//
+//        public void DoThis()
+//        {
+//            Console.WriteLine(_x + _y);
+//        }
+//    }
+//
+//    #endregion
 
 
 
