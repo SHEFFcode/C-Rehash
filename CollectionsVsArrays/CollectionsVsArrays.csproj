@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="BoxingAndUnboxing.cs" />
     <Compile Include="CastingAndConverting.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Generics.cs" />
     <Compile Include="Indexers.cs" />
     <Compile Include="Inheritance.cs" />
+    <Compile Include="Interfaces.cs" />
     <Compile Include="Overloading.cs" />
     <Compile Include="OverridingMethods.cs" />
     <Compile Include="Patient.cs" />

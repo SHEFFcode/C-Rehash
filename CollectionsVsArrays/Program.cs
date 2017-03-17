@@ -144,16 +144,16 @@ namespace CollectionsVsArrays
 
             #region Indexers
 
-            //            Indexers car = new Indexers();
-            //
-            //            car[1] = "Mercedes";
-            //            car[2] = "Dodge";
-            //            car[3] = "Chevrolet";
-            //            car[4] = "Honda";
-            //
-            //            Console.WriteLine($"Car one is {car[1]}");
-            //            Console.WriteLine($"Car one is {car[2]}");
-            //            Console.WriteLine($"Car one is {car[41]}");
+//                        Indexers car = new Indexers();
+//            
+//                        car[1] = "Mercedes";
+//                        car[2] = "Dodge";
+//                        car[3] = "Chevrolet";
+//                        car[4] = "Honda";
+//            
+//                        Console.WriteLine($"{car[1]}");
+//                        Console.WriteLine($"{car[2]}");
+//                        Console.WriteLine($"{car[41]}");
 
             #endregion
 
@@ -187,11 +187,17 @@ namespace CollectionsVsArrays
 
             #region OverridingMethods
 
-            OverridingPatient p = new OverridingPatient();
-            p.Examine();
+            //            OverridingPatient p = new OverridingPatient();
+            //            p.Examine();
+            //
+            //            OverridingPatient ap = new OverridingAdultPatient(); //Notice the object class is the base class, but it is an instance of the child class, but still get's child's method because of override.
+            //            ap.Examine();
 
-            OverridingPatient ap = new OverridingAdultPatient(); //Notice the object class is the base class, but it is an instance of the child class, but still get's child's method because of override.
-            ap.Examine();
+            #endregion
+
+            #region ExtensionMethods
+
+//            ExtensionMethods.Run();
 
             #endregion
 
