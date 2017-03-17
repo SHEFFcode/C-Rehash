@@ -111,20 +111,30 @@ namespace CollectionsVsArrays
             //            car.SlowDown(); //Notice that Accelerate is not available to the instance of car.
             //
             //            #endregion
-//
-//            #region Structs
-//
-//            Mark m = new Mark(6, 7);
-//            m.DoThis();
-//
-//            Mark m2; // create a struct without using the new keyword
-//            m2._x = 6; // if we dont use new keywork we have to provide the instance variables for the struct.
-//            m2._y = 7;
-//            m2.DoThis();
-//
-//            #endregion
+            //
+            //            #region Structs
+            //
+            //            Mark m = new Mark(6, 7);
+            //            m.DoThis();
+            //
+            //            Mark m2; // create a struct without using the new keyword
+            //            m2._x = 6; // if we dont use new keywork we have to provide the instance variables for the struct.
+            //            m2._y = 7;
+            //            m2.DoThis();
+            //
+            //            #endregion
 
+            #region Generics
 
+            //            Generics.Run();
+
+            #endregion
+
+            #region TypeCasting
+
+            CastingAndConverting.Run();
+
+            #endregion
 
 
         }
