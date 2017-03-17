@@ -49,6 +49,7 @@
     <Compile Include="Indexers.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Overloading.cs" />
+    <Compile Include="OverridingMethods.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

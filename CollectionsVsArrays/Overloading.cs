@@ -19,4 +19,12 @@ namespace CollectionsVsArrays
             Console.WriteLine("Billing info has been checked using a string and an integer");
         }
     }
+
+    public class OverloadingChild : Overloading
+    {
+        public void CheckBilling(string a, string b)
+        {
+            Console.WriteLine("Child: Checking using two strings");
+        }
+    }
 }

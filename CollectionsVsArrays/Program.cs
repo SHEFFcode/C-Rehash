@@ -174,11 +174,24 @@ namespace CollectionsVsArrays
 
             #region Overloading
 
-            Overloading o = new Overloading();
+            //            Overloading o = new Overloading();
+            //
+            //            o.CheckBilling();
+            //            o.CheckBilling("Hello", 2);
+            //            o.CheckBilling(1, 2);
+            //
+            //            OverloadingChild child = new OverloadingChild();
+            //            child.CheckBilling("hello","Hello");
 
-            o.CheckBilling();
-            o.CheckBilling("Hello", 2);
-            o.CheckBilling(1, 2);
+            #endregion
+
+            #region OverridingMethods
+
+            OverridingPatient p = new OverridingPatient();
+            p.Examine();
+
+            OverridingPatient ap = new OverridingAdultPatient(); //Notice the object class is the base class, but it is an instance of the child class, but still get's child's method because of override.
+            ap.Examine();
 
             #endregion
 
