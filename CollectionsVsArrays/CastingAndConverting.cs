@@ -27,6 +27,12 @@ namespace CollectionsVsArrays
 
             xx = Convert.ToInt32(yy);
             Console.WriteLine($"Double converted to int is {xx}"); //13, rounds up.
+
+
+            string str = "123";
+            int intgr = Convert.ToInt32(str); //Can't cast a string to an integer, have to use convert.
+
+            Console.WriteLine($"String to int is {intgr}");
         }
     }
 }
