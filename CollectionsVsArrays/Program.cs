@@ -160,15 +160,25 @@ namespace CollectionsVsArrays
 
             #region Inheritance
 
-            Patient p = new Patient();
-            p.Examine("Jeremy");
+            //            Patient p = new Patient();
+            //            p.Examine("Jeremy");
+            //
+            //            Child c = new Child(); //Child will inherit from patient
+            //            c.Innoculate();
+            //            c.Examine("Bobby");
+            //
+            //            UnderFive smalls = new UnderFive();
+            //            smalls.Cry();
 
-            Child c = new Child(); //Child will inherit from patient
-            c.Innoculate();
-            c.Examine("Bobby");
+            #endregion
 
-            UnderFive smalls = new UnderFive();
-            smalls.Cry();
+            #region Overloading
+
+            Overloading o = new Overloading();
+
+            o.CheckBilling();
+            o.CheckBilling("Hello", 2);
+            o.CheckBilling(1, 2);
 
             #endregion
 
