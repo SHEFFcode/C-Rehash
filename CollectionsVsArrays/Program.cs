@@ -132,7 +132,28 @@ namespace CollectionsVsArrays
 
             #region TypeCasting
 
-            CastingAndConverting.Run();
+            //            CastingAndConverting.Run();
+
+            #endregion
+
+            #region BoxingAndUnboxing
+
+            //            BoxingAndUnboxing.Run();
+
+            #endregion
+
+            #region Indexers
+
+            Indexers car = new Indexers();
+
+            car[1] = "Mercedes";
+            car[2] = "Dodge";
+            car[3] = "Chevrolet";
+            car[4] = "Honda";
+
+            Console.WriteLine($"Car one is {car[1]}");
+            Console.WriteLine($"Car one is {car[2]}");
+            Console.WriteLine($"Car one is {car[41]}");
 
             #endregion
 
