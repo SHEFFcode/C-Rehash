@@ -144,16 +144,31 @@ namespace CollectionsVsArrays
 
             #region Indexers
 
-            Indexers car = new Indexers();
+            //            Indexers car = new Indexers();
+            //
+            //            car[1] = "Mercedes";
+            //            car[2] = "Dodge";
+            //            car[3] = "Chevrolet";
+            //            car[4] = "Honda";
+            //
+            //            Console.WriteLine($"Car one is {car[1]}");
+            //            Console.WriteLine($"Car one is {car[2]}");
+            //            Console.WriteLine($"Car one is {car[41]}");
 
-            car[1] = "Mercedes";
-            car[2] = "Dodge";
-            car[3] = "Chevrolet";
-            car[4] = "Honda";
+            #endregion
 
-            Console.WriteLine($"Car one is {car[1]}");
-            Console.WriteLine($"Car one is {car[2]}");
-            Console.WriteLine($"Car one is {car[41]}");
+
+            #region Inheritance
+
+            Patient p = new Patient();
+            p.Examine("Jeremy");
+
+            Child c = new Child(); //Child will inherit from patient
+            c.Innoculate();
+            c.Examine("Bobby");
+
+            UnderFive smalls = new UnderFive();
+            smalls.Cry();
 
             #endregion
 

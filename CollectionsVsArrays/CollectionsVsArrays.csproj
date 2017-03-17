@@ -47,6 +47,8 @@
     <Compile Include="CastingAndConverting.cs" />
     <Compile Include="Generics.cs" />
     <Compile Include="Indexers.cs" />
+    <Compile Include="Inheritance.cs" />
+    <Compile Include="Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
