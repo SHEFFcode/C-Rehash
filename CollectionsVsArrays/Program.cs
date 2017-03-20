@@ -144,16 +144,16 @@ namespace CollectionsVsArrays
 
             #region Indexers
 
-//                        Indexers car = new Indexers();
-//            
-//                        car[1] = "Mercedes";
-//                        car[2] = "Dodge";
-//                        car[3] = "Chevrolet";
-//                        car[4] = "Honda";
-//            
-//                        Console.WriteLine($"{car[1]}");
-//                        Console.WriteLine($"{car[2]}");
-//                        Console.WriteLine($"{car[41]}");
+            //                        Indexers car = new Indexers();
+            //            
+            //                        car[1] = "Mercedes";
+            //                        car[2] = "Dodge";
+            //                        car[3] = "Chevrolet";
+            //                        car[4] = "Honda";
+            //            
+            //                        Console.WriteLine($"{car[1]}");
+            //                        Console.WriteLine($"{car[2]}");
+            //                        Console.WriteLine($"{car[41]}");
 
             #endregion
 
@@ -197,7 +197,14 @@ namespace CollectionsVsArrays
 
             #region ExtensionMethods
 
-//            ExtensionMethods.Run();
+            //            ExtensionMethods.Run();
+
+            #endregion
+
+            #region ExplicitInterfaces
+
+            ExplicitInterfaceImplementation e = new ExplicitInterfaceImplementation();
+            e.Run();
 
             #endregion
 
