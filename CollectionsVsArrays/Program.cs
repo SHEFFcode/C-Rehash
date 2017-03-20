@@ -239,8 +239,15 @@ namespace CollectionsVsArrays
 
             #region EventsMSWay
 
-//            EventsMicrosoftWay emw = new EventsMicrosoftWay();
-//            emw.Run();
+            //            EventsMicrosoftWay emw = new EventsMicrosoftWay();
+            //            emw.Run();
+
+            #endregion
+
+            #region Multithreading
+
+            MultiThreading mt = new MultiThreading();
+            mt.Run();
 
             #endregion
 
