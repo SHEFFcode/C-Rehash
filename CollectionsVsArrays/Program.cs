@@ -224,9 +224,22 @@ namespace CollectionsVsArrays
 
             #region MulticastDelegates
 
-            MulticastDelegates md = new MulticastDelegates();
+            //            MulticastDelegates md = new MulticastDelegates();
+            //
+            //            md.Run();
 
-            md.Run();
+            #endregion
+
+            #region Events
+
+            //            Events e = new Events();
+            //            e.Run();
+
+            #endregion
+
+            #region EventsMSWay
+
+            
 
             #endregion
 
