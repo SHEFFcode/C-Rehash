@@ -210,8 +210,15 @@ namespace CollectionsVsArrays
 
             #region Enumerables
 
-            IEnumerableExample ie = new IEnumerableExample();
-            ie.Run();
+            //            IEnumerableExample ie = new IEnumerableExample();
+            //            ie.Run();
+
+            #endregion
+
+            #region Delegates
+
+            Delegates d = new Delegates();
+            d.Run();
 
             #endregion
 

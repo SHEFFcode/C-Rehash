@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BoxingAndUnboxing.cs" />
     <Compile Include="CastingAndConverting.cs" />
+    <Compile Include="Delegates.cs" />
     <Compile Include="ExplicitInterfaceImplementation.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Generics.cs" />
