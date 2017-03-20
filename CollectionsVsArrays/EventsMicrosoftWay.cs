@@ -6,8 +6,11 @@ namespace CollectionsVsArrays
     {
         public void Run()
         {
-            EventPublisher ep = new EventPublisher();
-            EventSubscriber ev = new EventSubscriber();
+
+            Console.WriteLine("This is running");
+
+            EvtPublisher ep = new EvtPublisher();
+            EvtSubscriber ev = new EvtSubscriber();
 
             ep.evt += ev.HandleTheEvent;
 
@@ -18,13 +21,14 @@ namespace CollectionsVsArrays
 
     public class EvtPublisher
     {
-        public EventHandler evt;
-
+//        public EventHandler evt;
+        public EventHandler<EventArgsClass> evt;
         public void CheckBalance(int x)
         {
             if (x > 250)
             {
-                evt(this, EventArgs.Empty);
+                EventArgsClass eac = new EventArgsClass($"Balance Exceeds {x}.");
+                evt(this, eac);
             }
         }
 
@@ -32,9 +36,24 @@ namespace CollectionsVsArrays
 
     public class EvtSubscriber
     {
-        public void HandleTheEvent(object sender, EventArgs e)
+        public void HandleTheEvent(object sender, EventArgsClass e)
         {
-            Console.WriteLine($"Attention {sender} is advising that the balance is over 250.");
+            Console.WriteLine($"Attention from {sender} alerts: {e.Message}");
+        }
+    }
+
+    public class EventArgsClass : EventArgs
+    {
+        public EventArgsClass(string str)
+        {
+            msg = str;
+        }
+
+        private string msg;
+
+        public string Message
+        {
+            get { return msg; }
         }
     }
 

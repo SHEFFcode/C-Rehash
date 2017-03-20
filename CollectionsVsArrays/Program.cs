@@ -239,7 +239,8 @@ namespace CollectionsVsArrays
 
             #region EventsMSWay
 
-            
+//            EventsMicrosoftWay emw = new EventsMicrosoftWay();
+//            emw.Run();
 
             #endregion
 

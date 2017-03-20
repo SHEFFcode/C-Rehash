@@ -46,7 +46,9 @@
     <Compile Include="BoxingAndUnboxing.cs" />
     <Compile Include="CastingAndConverting.cs" />
     <Compile Include="Delegates.cs" />
+    <Compile Include="EventArgs.cs" />
     <Compile Include="Events.cs" />
+    <Compile Include="EventsMicrosoftWay.cs" />
     <Compile Include="ExplicitInterfaceImplementation.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Generics.cs" />
