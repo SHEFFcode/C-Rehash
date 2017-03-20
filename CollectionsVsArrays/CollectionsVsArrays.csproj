@@ -48,6 +48,7 @@
     <Compile Include="ExplicitInterfaceImplementation.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Generics.cs" />
+    <Compile Include="IEnumerableExample.cs" />
     <Compile Include="Indexers.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Interfaces.cs" />

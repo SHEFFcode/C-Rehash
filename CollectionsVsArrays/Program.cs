@@ -203,8 +203,15 @@ namespace CollectionsVsArrays
 
             #region ExplicitInterfaces
 
-            ExplicitInterfaceImplementation e = new ExplicitInterfaceImplementation();
-            e.Run();
+            //            ExplicitInterfaceImplementation e = new ExplicitInterfaceImplementation();
+            //            e.Run();
+
+            #endregion
+
+            #region Enumerables
+
+            IEnumerableExample ie = new IEnumerableExample();
+            ie.Run();
 
             #endregion
 
