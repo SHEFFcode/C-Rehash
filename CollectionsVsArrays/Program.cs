@@ -217,8 +217,16 @@ namespace CollectionsVsArrays
 
             #region Delegates
 
-            Delegates d = new Delegates();
-            d.Run();
+            //            Delegates d = new Delegates();
+            //            d.Run();
+
+            #endregion
+
+            #region MulticastDelegates
+
+            MulticastDelegates md = new MulticastDelegates();
+
+            md.Run();
 
             #endregion
 

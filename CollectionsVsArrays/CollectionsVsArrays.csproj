@@ -53,6 +53,7 @@
     <Compile Include="Indexers.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Interfaces.cs" />
+    <Compile Include="MulticastDelegates.cs" />
     <Compile Include="Overloading.cs" />
     <Compile Include="OverridingMethods.cs" />
     <Compile Include="Patient.cs" />
