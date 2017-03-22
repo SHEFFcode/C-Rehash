@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncAwait.cs" />
     <Compile Include="BoxingAndUnboxing.cs" />
     <Compile Include="CastingAndConverting.cs" />
     <Compile Include="Delegates.cs" />

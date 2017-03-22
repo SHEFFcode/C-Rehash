@@ -249,8 +249,15 @@ namespace CollectionsVsArrays
             //            MultiThreading mt = new MultiThreading();
             //            mt.Run();
 
-            ThreadPool tp = new ThreadPool();
-            tp.Run();
+            //            ThreadPool tp = new ThreadPool();
+            //            tp.Run();
+
+            #endregion
+
+            #region AsyncAwait
+
+            AsyncAwait aw = new AsyncAwait();
+            aw.Run();
 
             #endregion
 
